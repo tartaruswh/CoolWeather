@@ -1,10 +1,13 @@
 package com.example.a15840.coolweather.util.parse;
 
+import android.text.StaticLayout;
 import android.text.TextUtils;
 
 import com.example.a15840.coolweather.db.model.Province;
 import com.example.a15840.coolweather.db.model.City;
 import com.example.a15840.coolweather.db.model.Country;
+import com.example.a15840.coolweather.gson.Weather;
+import com.google.gson.Gson;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -75,5 +78,26 @@ public class UtilityParse {
             }
         }
         return false;
+    }
+
+    /**
+     *
+     * @param response
+     * @return
+     * 解析服务器返回的json数据
+     */
+    public static Weather handleWeatherResponse(String response){
+        try {
+            JSONObject jsonObject = new JSONObject(response);
+            JSONArray jsonArray = jsonObject.getJSONArray("HeWeather");
+            String weatherContent = jsonArray.getJSONObject(0).toString();
+            /**
+                获取转为全局文本数据的json数据后使之与Weather类进行映射
+             */
+            return new Gson().fromJson(weatherContent, Weather.class);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
