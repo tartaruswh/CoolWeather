@@ -3,20 +3,20 @@ package com.example.a15840.coolweather.db.model;
 import org.litepal.crud.DataSupport;
 
 /**
- * Created by 15840 on 2017/12/27.
+ * Created by 15840 on 2018/1/3.
  */
 
-public class Province extends DataSupport{
-    private int provinceId;
+public class Province extends DataSupport {
+    private int id;
     private String provinceName;
     private int provinceCode;
 
-    public int getProvinceId() {
-        return provinceId;
+    public int getId() {
+        return id;
     }
 
-    public void setProvinceId(int provinceId) {
-        this.provinceId = provinceId;
+    public void setId(int provinceId) {
+        this.id = provinceId;
     }
 
     public String getProvinceName() {
@@ -35,3 +35,4 @@ public class Province extends DataSupport{
         this.provinceCode = provinceCode;
     }
 }
+
