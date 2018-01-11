@@ -36,6 +36,9 @@
                     android:layout_height="25dp"></LinearLayout>
 
                 <include layout="@layout/suggestion" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"></LinearLayout>
             </LinearLayout>
 
 

@@ -17,23 +17,49 @@
             android:textColor="#fff"
             android:textSize="20sp"
             />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </LinearLayout>
         <TextView
             android:id="@+id/comfort_text"
             android:textColor="#fff"
             android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </LinearLayout>
         <TextView
             android:id="@+id/car_wash_text"
             android:textColor="#fff"
             android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </LinearLayout>
         <TextView
             android:id="@+id/sport_text"
             android:textColor="#fff"
             android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+
+        </LinearLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
